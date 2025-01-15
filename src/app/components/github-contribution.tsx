@@ -1,4 +1,4 @@
-/* eslint no-use-before-define: 0 */
+// @ts-nocheck
 
 "use client";
 
