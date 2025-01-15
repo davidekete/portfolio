@@ -1,7 +1,7 @@
 import styles from "./landing.module.css";
 import GitHubContribution from "../components/github-contribution";
 
-export default function Home() {
+export default function Landing() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
