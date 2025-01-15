@@ -47,11 +47,11 @@ export default function Landing() {
               <img src="landing-assets/arrow-up-right.svg" alt="" />
             </a>
             <a href="http://">
-              Projects
+              Projects<sup>(5)</sup>
               <img src="landing-assets/arrow-up-right.svg" alt="" />
             </a>
             <a href="http://">
-              Articles
+              Articles<sup>(5)</sup>
               <img src="landing-assets/arrow-up-right.svg" alt="" />
             </a>
             <a href="http://">

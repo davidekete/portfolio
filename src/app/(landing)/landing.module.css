@@ -23,7 +23,7 @@
   margin-inline: auto;
   flex-direction: column;
   align-items: flex-start;
-  gap: 40px;
+  gap: 20px;
   flex-shrink: 0;
 }
 
@@ -125,7 +125,13 @@
 
 .small_links a {
   /* Styles for the individual small links */
-  /* display: flex;
+  display: flex;
   gap: 5px;
-  flex-shrink: 1; */
+  place-content: centre;
 }
+
+a:hover {
+  color: #f9fafb80;
+}
+
+
