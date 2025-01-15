@@ -4,11 +4,27 @@ import { useEffect, useState } from "react";
 import { GraphQLClient } from "graphql-request";
 import ContributionStyles from "./contributions.module.css";
 
+interface ContributionData {
+  user: {
+    contributionsCollection: {
+      contributionCalendar: {
+        totalContributions: number;
+        weeks: Array<{
+          contributionDays: Array<{
+            contributionCount: number;
+            date: string;
+          }>;
+        }>;
+      };
+    };
+  };
+}
+
 const API_ENDPOINT = "https://api.github.com/graphql";
 
 export default function GitHubContribution({ userName }: { userName: string }) {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
+  const [data, setData] = useState<ContributionData | unknown>(null);
+  const [error, setError] = useState<Error | unknown>(null);
 
   useEffect(() => {
     const fetchContributions = async () => {
