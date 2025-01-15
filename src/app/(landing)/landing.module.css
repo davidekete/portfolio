@@ -1,4 +1,137 @@
-.page {
+:root {
+  --white-100: #ffff;
+  --gray: #6e6e6e;
+  --white-200: #f9fafb;
+  --black: #222222;
+  --semi-white: #f9fafb80;
+  --black-100: #141414;
+  
+}
+
+.container {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  background: #141414;
+  color: var(--white-100);
+  font-family: "Geist Mono";
+  cursor: url('/public/landing-assets/circle-outline.svg');
+}
+
+.content {
+  display: flex;
+  width: min(640px, 90vw);
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+.info_header {
+  /* Styles for the information header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 15px;
+}
+
+.header_text {
+  /* Styles for the text section in the header */
+  color: #f9fafb;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.name {
+  /* Styles for the name */
+  color: #f9fafb;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.name span {
+  color: #6e6e6e;
+}
+
+.jd {
+  /* Styles for the job description */
+  color: #6e6e6e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.header_socials {
+  /* Styles for the header socials section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  color: #6e6e6e;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+.header_socials a {
+  display: flex;
+  gap: 6px;
+}
+
+.about {
+  /* Styles for the about paragraph */
+}
+
+.github_contributions {
+  /* Styles for the GitHub contributions section */
+}
+
+.links {
+  /* Styles for the links section */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+
+.large_link {
+  /* Styles for the large link */
+  border: 1px solid #222;
+  width: 100%;
+  padding: 8px 0px;
+  place-content: center;
+  gap: 4px;
+  align-self: stretch;
+  display: flex;
+}
+
+.small_links {
+  /* Styles for the small links container */
+  border-bottom: 1px solid #222;
+  display: flex;
+  padding: 8px 0px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 10px;
+}
+
+.small_links a {
+  /* Styles for the individual small links */
+  /* display: flex;
+  gap: 5px;
+  flex-shrink: 1; */
+}
+
+/* .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
@@ -107,8 +240,10 @@ a.secondary {
 .footer img {
   flex-shrink: 0;
 }
+  */
 
 /* Enable hover only on non-touch devices */
+/*
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
@@ -165,4 +300,5 @@ a.secondary {
   .logo {
     filter: invert();
   }
-}
+} 
+*/

@@ -1,0 +1,37 @@
+/* contribution.module.css */
+.contribution_grid {
+  display: grid;
+  grid-template-columns: repeat(40, 12px); /* 7 columns for 7 days of the week */
+  grid-template-rows: repeat(5, 12px); /* 52 rows for 52 weeks */
+  gap: 4px; /* Space between cells */
+  justify-content: center;
+  /* background: lightgray 0px 0px / 100% 100% no-repeat; */
+}
+
+.cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: #ebedf0; /* Default level 0 color */
+  transition: background-color 0.2s;
+}
+
+.level-NONE {
+  background-color: #6e6e6e;; /* Light gray for no contributions */
+}
+
+.level-one {
+  background-color: #ba80e6; /* Darker light purple */
+}
+
+.level-two {
+  background-color: #9e63d4; /* Darker medium purple */
+}
+
+.level-three {
+  background-color: #872ba6; /* Darker dark purple */
+}
+
+.level-four {
+  background-color: #600087; /* Very dark purple */
+}
