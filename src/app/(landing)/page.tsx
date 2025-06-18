@@ -1,5 +1,5 @@
 import styles from "./landing.module.css";
-import GitHubContribution from "../components/github-contribution";
+// import GitHubContribution from "../components/github-contribution";
 
 export default function Landing() {
   return (
@@ -14,10 +14,10 @@ export default function Landing() {
             <p className={styles.jd}>Documentation Engineer</p>
           </div>
           <div className={styles.header_socials}>
-            <a href="https://">
+            <a href="https://x.com/david_ekete">
               <img src="landing-assets/twitter.svg" alt="" />X
             </a>
-            <a href="https://">
+            <a href="https://github.com/davidekete">
               <img src="landing-assets/github.svg" alt="" />
               GitHub
             </a>
@@ -31,9 +31,9 @@ export default function Landing() {
           iure officia nobis nam?
         </p>
 
-        <div className={styles.github_contributions}>
+        {/* <div className={styles.github_contributions}>
           <GitHubContribution userName={"davidekete"} />
-        </div>
+        </div> */}
 
         <div className={styles.links}>
           <a href="https://" className={styles.large_link}>
